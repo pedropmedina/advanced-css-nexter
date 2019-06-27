@@ -33,5 +33,49 @@
   ],
   "stories": [
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!"
+  ],
+  "homes": [
+    {
+      "name": "Beautiful Family House",
+      "location": "Canada",
+      "rooms": "6 rooms",
+      "area": "450m",
+      "price": "$1,200,000"
+    },
+    {
+      "name": "Modern Glass Villa",
+      "location": "USA",
+      "rooms": "5 rooms",
+      "area": "325m",
+      "price": "$2.750,000"
+    },
+    {
+      "name": "Cozy Country House",
+      "location": "UK",
+      "rooms": "4 rooms",
+      "area": "250m",
+      "price": "$850,000"
+    },
+    {
+      "name": "Large Rustical Villa",
+      "location": "Potugal",
+      "rooms": "6 rooms",
+      "area": "480m",
+      "price": "$1,950,000"
+    },
+    {
+      "name": "Majestic Palace House",
+      "location": "Germany",
+      "rooms": "18 rooms",
+      "area": "4230m",
+      "price": "$9,500,00"
+    },
+    {
+      "name": "Modern Family Apartment",
+      "location": "Italy",
+      "rooms": "3 rooms",
+      "area": "180m",
+      "price": "$600,000"
+    }
   ]
 }
