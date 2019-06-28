@@ -61,7 +61,7 @@ export const Name = styled.h5`
   transform: translateY(50%);
 `;
 
-export const Text = styled.p`
+export const Feature = styled.div`
   font-size: 1.5rem;
   margin-left: 2rem;
   display: flex;
@@ -69,6 +69,6 @@ export const Text = styled.p`
   margin-top: ${({ marginTop }) => (marginTop ? '2.5rem' : 'initial')};
 `;
 
-export const CardButton = styled(Button)`
+export const HomeButton = styled(Button)`
   grid-column: 1 / -1;
 `;

@@ -34,21 +34,21 @@ const Homes = () => (
           </Styled.Like>
           <Styled.Name>{name}</Styled.Name>
 
-          <Styled.Text marginTop>
+          <Styled.Feature marginTop>
             <Styled.Icon>
               <use href={`${svgicons}#icon-map-pin`}></use>
             </Styled.Icon>
             <p>{location}</p>
-          </Styled.Text>
+          </Styled.Feature>
 
-          <Styled.Text marginTop>
+          <Styled.Feature marginTop>
             <Styled.Icon>
               <use href={`${svgicons}#icon-profile-male`}></use>
             </Styled.Icon>
             <p>{rooms}</p>
-          </Styled.Text>
+          </Styled.Feature>
 
-          <Styled.Text>
+          <Styled.Feature>
             <Styled.Icon>
               <use href={`${svgicons}#icon-expand`}></use>
             </Styled.Icon>
@@ -56,16 +56,16 @@ const Homes = () => (
               {area}
               <sup>2</sup>
             </p>
-          </Styled.Text>
+          </Styled.Feature>
 
-          <Styled.Text>
+          <Styled.Feature>
             <Styled.Icon>
               <use href={`${svgicons}#icon-key`}></use>
             </Styled.Icon>
             <p>{price}</p>
-          </Styled.Text>
+          </Styled.Feature>
 
-          <Styled.CardButton>Contact realtor</Styled.CardButton>
+          <Styled.HomeButton>Contact realtor</Styled.HomeButton>
         </Styled.Home>
       );
     })}
