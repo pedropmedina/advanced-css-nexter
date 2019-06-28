@@ -5,6 +5,8 @@ export const Heading1 = styled.h1`
   font-weight: 400;
   color: ${({ dark }) =>
     !dark ? 'var(--color-grey-light-1)' : 'var(--color-grey-dark-1)'};
+  font-size: 4.5rem;
+  line-height: 1;
 `;
 
 export const Heading2 = styled(Heading1)`
