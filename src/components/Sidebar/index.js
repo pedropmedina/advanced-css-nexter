@@ -1,7 +1,11 @@
 import React from 'react';
 
-import { Container } from './styled';
+import * as Styled from './styled';
 
-const Sidebar = () => <Container>Sidebar</Container>;
+const Sidebar = () => (
+  <Styled.Sidebar>
+    <Styled.SidebarButton />
+  </Styled.Sidebar>
+);
 
 export default Sidebar;
