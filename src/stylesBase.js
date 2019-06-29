@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components/macro';
 
+import { mediaQueries } from './stylesShare';
+
 export default createGlobalStyle`
   :root {
     --color-primary: #c69963;
@@ -22,6 +24,10 @@ export default createGlobalStyle`
   html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    ${mediaQueries.bpLargest`
+      font-size: 50%;
+    `}
   }
 
   body {

@@ -22,7 +22,7 @@ const Header = () => (
   <Styled.Header>
     <Styled.Logo src={logo} alt="" />
     <Heading3 as="h3">Your own home:</Heading3>
-    <Heading1>The ultimate persal freedom</Heading1>
+    <Heading1>The ultimate personal freedom</Heading1>
     <Styled.HeaderButton>View our properties</Styled.HeaderButton>
     <Styled.Text>Seen on</Styled.Text>
     <Styled.SeenonLogos>

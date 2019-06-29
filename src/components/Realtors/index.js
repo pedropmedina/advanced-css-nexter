@@ -34,13 +34,13 @@ const Realtors = () => (
     <Heading3>Top 3 Realtors</Heading3>
     <Styled.Profiles>
       {realtorsData.map(({ src, alt, name, sold }) => (
-        <>
+        <React.Fragment key={alt}>
           <Styled.Photo src={src} alt={alt} />
           <Styled.Details>
             <Heading4>{name}</Heading4>
             <p>{sold}</p>
           </Styled.Details>
-        </>
+        </React.Fragment>
       ))}
     </Styled.Profiles>
   </Styled.Realtors>

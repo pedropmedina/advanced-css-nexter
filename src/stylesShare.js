@@ -1,4 +1,22 @@
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
+
+const breakpoints = {
+  bpLargest: '1200',
+  bpLarge: '1000',
+  bpMedium: '800',
+  bpSmall: '600'
+};
+
+// create an object with css properties based on breakpoint
+// { bpLarge: (..args) => css``, bpMedium: etc... }
+export const mediaQueries = Object.keys(breakpoints).reduce((queries, bp) => {
+  queries[bp] = (...args) => css`
+    @media only screen and (max-width: ${breakpoints[bp] / 16}em) {
+      ${css(...args)}
+    }
+  `;
+  return queries;
+}, {});
 
 export const Heading1 = styled.h1`
   font-family: var(--font-display);

@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 
 import bg from '../../assets/back.jpg';
+import { mediaQueries } from '../../stylesShare';
 
 export const Pictures = styled.div`
   background-color: var(--color-primary);
@@ -14,6 +15,12 @@ export const Pictures = styled.div`
       rgba(198, 153, 99, 0.5)
     ),
     url(${bg});
+  background-size: cover;
+
+  ${mediaQueries.bpMedium`
+      grid-column: 1 / -1;
+      padding: 6rem;
+    `}
 `;
 
 export const Image = styled.img`
@@ -23,6 +30,12 @@ export const Image = styled.img`
   z-index: ${({ one }) => !one && 20};
   box-shadow: ${({ one }) =>
     one ? '0 2rem 5rem rgba(0,0,0,.1)' : '0 2rem 5rem rgba(0,0,0,.2)'};
+
+  ${mediaQueries.bpMedium`
+    grid-row: ${({ one }) => (one ? '1 / -1' : '1 / -1')};
+    grid-column: ${({ one }) => one && '1 / 5'};
+    width: 100%;
+   `}
 `;
 
 export const Content = styled.div`
@@ -33,6 +46,11 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  ${mediaQueries.bpMedium`
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    `}
 `;
 
 export const ContentText = styled.p`

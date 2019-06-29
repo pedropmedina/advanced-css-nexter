@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Realtors = styled.div`
   background-color: var(--color-secondary);
   grid-column: col-start 7 / full-end;
@@ -9,6 +11,10 @@ export const Realtors = styled.div`
   justify-content: center;
   row-gap: 2rem;
   justify-items: center;
+
+  ${mediaQueries.bpMedium`
+    grid-column: 1 / -1;
+  `}
 `;
 
 export const Profiles = styled.div`
@@ -17,6 +23,14 @@ export const Profiles = styled.div`
   column-gap: 2rem;
   row-gap: 5vh;
   align-items: center;
+
+  ${mediaQueries.bpMedium`
+    grid-template-columns: repeat(3, min-content max-content);
+  `}
+
+  ${mediaQueries.bpSmall`
+    grid-template-columns: min-content max-content;
+  `}
 `;
 
 export const Photo = styled.img`

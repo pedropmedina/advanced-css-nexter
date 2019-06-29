@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-import { Button } from '../../stylesShare';
+import { Button, mediaQueries } from '../../stylesShare';
 import hero from '../../assets/hero.jpeg';
 
 export const Header = styled.header`
@@ -17,10 +17,18 @@ export const Header = styled.header`
   padding-top: 4rem;
 
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   row-gap: 1.5rem;
   justify-content: center;
+
+  ${mediaQueries.bpMedium`
+    grid-column: 1 / -1;
+  `}
+
+  ${mediaQueries.bpSmall`
+    padding: 5rem;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -51,9 +59,11 @@ export const SeenonLogos = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   justify-items: center;
+  align-items: center;
 
   img {
-    height: 2.5rem;
+    max-height: 2.5rem;
+    max-width: 100%;
     filter: brightness(70%);
   }
 `;
